@@ -17,7 +17,7 @@ const getCurrentFormatedTime = (d, sep) => ([
 )
 
 setInterval(() => ReactDOM.render(
-    getCurrentFormatedTime(new Date(), ':'),
+    <div>{getCurrentFormatedTime(new Date(), ':')}</div>,
     document.getElementById('root')),
   1000)
 </script>
