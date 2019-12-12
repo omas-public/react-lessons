@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<title>greeting</title>
+
+<script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+
+<div id="root"></div>
+<script type="text/babel">
+const greeting = (list, len) => <p>{list[Math.floor(Math.random * len)]}</p>
+const messages = [
+  'おはようございます',
+  'こんにちは',
+  'こんばんは'
+]
+const root = document.getElementById('root')
+
+ReactDOM.render(greeting(messages, message.length), root)
+
+</script>
